@@ -1,0 +1,36 @@
+ .Menu-open{
+    width: 255px;
+    background-color: #363740;
+}
+
+.Menu-header{
+    margin-left: 32px;
+    margin-top: 37px;
+    margin-bottom: 43px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.Menu-header-text{
+    display: inline-block;
+    margin-left: 12px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size:  19px;
+    color: #A4A6B3;
+}
+
+.Menu-item-text{
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size:  16px;
+    color: #A4A6B3;
+    padding-left: 16px;
+}
+
+.Menu-items:hover .Menu-item-text{
+    color: white;
+}

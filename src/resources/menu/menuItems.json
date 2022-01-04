@@ -1,0 +1,42 @@
+[
+    {
+        "name":"Overview",
+        "divider": false, 
+        "link":"#1!"
+    },
+    {
+        "name":"Tickets", 
+        "divider": false, 
+        "link":"#2!"
+    },
+    {
+        "name":"Ideas", 
+        "divider": false, 
+        "link":"#3!"
+    },
+    {
+        "name":"Contacts", 
+        "divider": false, 
+        "link":"#4!"
+    },
+    {
+        "name":"Agents", 
+        "divider": false, 
+        "link":"#5!"
+    },
+    {
+        "name":"Articles", 
+        "divider": true, 
+        "link":"#6!"
+    },
+    {
+        "name":"Settings", 
+        "divider": false, 
+        "link":"#7!"
+    },
+    {
+        "name":"Subscription", 
+        "divider": false, 
+        "link":"#8!"
+    }
+]
