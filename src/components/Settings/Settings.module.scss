@@ -1,0 +1,104 @@
+@import "../../styles/core/import.scss";
+
+.Login-page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #363740; 
+}
+
+.Login-window{
+    width: 380px;
+    height: 582px;
+    background-color: white;
+    border-radius: 8px;
+} 
+
+.Login-home1{
+    display: inline-block;
+    margin-left: 166px;
+    margin-top: 40px;
+    margin-bottom: 12px;
+}
+
+.Login-home2{
+    display: inline-block;
+    margin-left: 123px;
+    margin-bottom: 32px;
+}
+
+.Login-home-text{
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size:  19px;
+    color: $color-menu-text;
+}
+
+.Login-header{
+    margin-left: 52px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size:  24px;
+    color: #252733;
+    margin-bottom: 12px;
+}
+
+.Login-description{
+    margin-left: 64px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size:  14px;
+    color:  $color-menu-text;
+    margin-bottom: 48px;
+}
+
+.Login-name{
+    margin-left: 32px;
+    margin-bottom: 24px;
+}
+
+.Login-input-name-text{
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size:  12px;
+    color:  $color-menu-text;
+    margin-bottom: 6px;
+}
+
+.Login-input-name{
+    width: 316px;
+    height: 42px;
+    border-radius: 8px;
+    border: solid;
+    border-width: 1px;
+    border-color: #F0F1F7;
+}
+
+.Login-input-name::placeholder{
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size:  14px;
+    color:  $color-menu-text;
+}
+
+.Login-button{
+    margin-left: 32px;
+    border: solid;
+    border-width: 1px;
+    width: 316px;
+    height: 48px;
+    border-radius: 8px;
+    text-decoration: none;
+    background-color: #3751FF;
+    color: white;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 600;
+    font-size:  14px;
+}

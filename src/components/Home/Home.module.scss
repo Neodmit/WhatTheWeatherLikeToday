@@ -1,6 +1,8 @@
+@import "../../styles/core/import.scss";
+ 
  .Menu-open{
-    width: 255px;
-    background-color: #363740;
+    width: 255px !important;
+    background-color: #363740 !important;
 }
 
 .Menu-header{
@@ -19,7 +21,7 @@
     font-style: normal;
     font-weight: 700;
     font-size:  19px;
-    color: #A4A6B3;
+    color: $color-menu-text;
 }
 
 .Menu-item-text{
@@ -27,7 +29,7 @@
     font-style: normal;
     font-weight: 400;
     font-size:  16px;
-    color: #A4A6B3;
+    color: $color-menu-text;
     padding-left: 16px;
 }
 
