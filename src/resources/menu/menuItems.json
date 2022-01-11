@@ -1,0 +1,12 @@
+[
+    {
+        "name":"Settings", 
+        "divider": false, 
+        "link":"/settings"
+    },
+    {
+        "name":"Editing list", 
+        "divider": false, 
+        "link":"/editing"
+    }
+]

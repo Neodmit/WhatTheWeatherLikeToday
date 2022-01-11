@@ -1,27 +1,19 @@
 import React, {Component} from 'react';
-import MenuToggle from "./components/Navigation/MenuToggle/MenuToggle";
+import {Route, Routes} from 'react-router-dom'
+import Layout from "./hoc/Layout.js"
+import Home from "./components/Home/Home.js";
+import Settings from "./components/Settings/Settings.js"
 
 class App extends Component {
-
-  state = {
-    menu: false
-  }
-  
-  toggleMenuHandler = () =>{
-    this.setState({
-      menu: !this.state.menu
-    })
-  }
-  
   render() {
       return (
-      <div className="App">
-        <MenuToggle 
-          onToggle = {this.toggleMenuHandler}
-          isOpen = {this.state.menu}
-        />
-        
-      </div>
+        <Layout>
+          <Routes>
+            <Route path="/" element={<Home/>}/>
+            <Route path="/settings" element={<Settings/>}/>
+            <Route path="/editing" />
+          </Routes>
+        </Layout>
     );
   }
 }
