@@ -3,28 +3,28 @@ import { Drawer, IconButton, List, ListItem , ListItemIcon, ListItemText} from '
 import React, {Component} from 'react';
 import MenuIcon from '@material-ui/icons/Menu';
 import menuItems from '../../resources/menu/menuItems.json'
-import logo from './pics/logo.svg'
+//import logo from './pics/logo.svg'
 
 
 
 class Home extends Component{
-    constructor(props) {
-        super(props);
-        this.state = {
-            isOpen: false
-        };
+    // constructor(props) {
+    //     super(props);
+    //     this.state = {
+    //         isOpen: false
+    //     };
 
-        (window.innerWidth < 479) ? this.variant="" : this.varinat = "permanent"
-    }
+    //     (window.innerWidth < 479) ? this.variant="" : this.varinat = "permanent"
+    // }
 
     render(){
         return( 
             <>
-                <IconButton onClick={()=>this.setState({isOpen: true})}> {/*onClick={()=>this.setState({isOpen: true})} */}
+                {/* <IconButton onClick={()=>this.setState({isOpen: true})}>
                     <MenuIcon/>
-                </IconButton>
+                </IconButton> */}
             
-                <Drawer
+                {/* <Drawer
                     classes={{paper: classes["Menu-open"]}}
                     variant = {this.varinat}
                     anchor={'left'}
@@ -39,7 +39,7 @@ class Home extends Component{
                         {setMenuItems()}
                     </List>
             
-                </Drawer>
+                </Drawer> */}
                 
             </>
         )
@@ -47,18 +47,20 @@ class Home extends Component{
     
 }
 
-function setMenuItems(){
-    return(
-        menuItems.map((menuItems, index) => 
-        <ListItem key={index} divider={menuItems.divider} button  className={classes["Menu-items"]}>
-            <ListItemIcon>
-                <a href={menuItems.link}>
-                    <ListItemText classes={{primary: classes["Menu-item-text"]}}>{menuItems.name}</ListItemText>
-                </a> 
-            </ListItemIcon>
-        </ListItem>)
-    );
-}
+// function setMenuItems(){
+//     return(
+//         menuItems.map((menuItems, index) => 
+//         <a href={menuItems.link}>
+//             <ListItem key={index} divider={menuItems.divider} button  className={classes["Menu-items"]}>
+//                 <ListItemIcon>
+                
+//                         <ListItemText classes={{primary: classes["Menu-item-text"]}}>{menuItems.name}</ListItemText>
+                
+//                 </ListItemIcon>
+//             </ListItem>
+//         </a>)
+//     );
+// }
 
 
 export default Home

@@ -1,0 +1,42 @@
+@import "../styles/core";
+
+.Menu-open{
+    width: 255px !important;
+    background-color: $color-menu-background !important;
+}
+
+.Menu-header{
+    margin-left: 32px;
+    margin-top: 37px;
+    margin-bottom: 43px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.Menu-header-text{
+    display: inline-block;
+    margin-left: 12px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size:  19px;
+    color: $color-menu-text;
+}
+
+.Menu-item-text{
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size:  16px;
+    color: $color-menu-text;
+    padding-left: 16px;
+}
+
+.Menu-items:hover .Menu-item-text{
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}

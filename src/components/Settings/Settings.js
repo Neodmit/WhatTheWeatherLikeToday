@@ -4,8 +4,6 @@ import logo from './pics/logo.svg'
 
 class Settings extends Component{
 
-    userData;
-
     constructor(props) {
         super(props);
 
@@ -16,9 +14,9 @@ class Settings extends Component{
         this.onSubmit = this.onSubmit.bind(this);
  
         this.state = {
-            name: 'sadf',
-            surname: 'asdf',
-            api: 'fasd',
+            name: '',
+            surname: '',
+            api: '',
         }
     }
 
@@ -38,35 +36,20 @@ class Settings extends Component{
     onSubmit(e) {
         e.preventDefault()
 
+        this.userData = {
+            name: this.state.name,
+            surname: this.state.surname,
+            api: this.state.api
+        }
+
+        localStorage.setItem(this.state.api, JSON.stringify(this.userData));
+
         this.setState({
-            name: '',
-            surname: '',
-            api: ''
-        })
-    }
-
-    componentDidMount() {
-        this.userData = JSON.parse(localStorage.getItem('user'));
-
-        if (localStorage.getItem('user')) {
-            this.setState({
-                name: this.userData.name,
-                surname: this.userData.surname,
-                api: this.userData.api
-            })
-        } else {
-            this.setState({
                 name: '',
                 surname: '',
                 api: ''
-            })
-        }
+        }) 
     }
-
-    componentWillUpdate(nextProps, nextState) {
-        localStorage.setItem('user', JSON.stringify(nextState));
-    }
-
 
     render(){
         return(

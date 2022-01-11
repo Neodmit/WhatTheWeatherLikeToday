@@ -1,11 +1,11 @@
-@import "../../styles/core/import.scss";
+@import "../../styles/core";
 
 .Login-page{
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #363740; 
+    background-color: $color-menu-background; 
 }
 
 .Login-window{
@@ -95,10 +95,16 @@
     height: 48px;
     border-radius: 8px;
     text-decoration: none;
-    background-color: #3751FF;
+    background-color: $color-button;
     color: white;
     font-family: 'Mulish';
     font-style: normal;
     font-weight: 600;
     font-size:  14px;
+    cursor: pointer;
+}
+
+.Login-button:hover{
+    background-color: white;
+    color: $color-button;
 }
